@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class GenerateLithium
 {//you may alter this code accordingly as there may be some anomalies 
-    int tray [][] = new int [5][3];
+    private int tray [][] = new int [5][3];
     private int grading = 0;
     private Random randomGenerator;
     /**

@@ -8,33 +8,45 @@ import java.util.ArrayList;
 public class LithiumGrading
 {
     // instance variables - replace the example below with your own
-    private ArrayList<Integer> lowGrade;
-    private ArrayList<Integer> highGrade;
-    GenerateLithium generateLithium;
+    private ArrayList<Integer> lowGrade = new ArrayList<Integer>(); 
+    private ArrayList<Integer> highGrade = new ArrayList<Integer>(); 
+    private int lithiumTray [][] = new int [5][3];
     /**
      * Constructor for objects of class LithiumGrading
      */
-    public LithiumGrading()
+    public LithiumGrading(GenerateLithium generateLithium)
     {
-        //ArrayList<Integer> lowGrade = new ArrayList<Integer>(); 
-        //ArrayList<Integer> highGrade = new ArrayList<Integer>();
-        generateLithium = new GenerateLithium();        //Is this needed?
+        lithiumTray = generateLithium.getTray();
+    }
+
+    /**
+     * Test Method to print out Lithium Tray, to see if we can use it here
+     */
+    public void printOut(){
+        for (int[] a : lithiumTray) {
+            for (int i : a) {
+                System.out.print(i + " || ");
+
+            }
+            System.out.println("\n");
+        }
+
     }
 
     /**
      * Sorts tray into High and Low Grade Linked Lists
      */
-    public void generateGrades(GenerateLithium generateLithium.tray){
-        int counter = 0;
-        int [] [] tray = generateLithium.getTray();
-        for (int[] a : tray) {
-            for (int i : a) {
-                if( i > 25){
-                    highGrade.set(counter,i);
-                    counter++;
+    public void generateGrades(){
+        int highCounter = 0;
+        int lowCounter = 0;
+        for (int row = 0; row < lithiumTray.length; row++) {
+            for (int col = 0; col < lithiumTray[row].length; col++) {
+                if( lithiumTray[row][col] > 25){
+                    highGrade.add(lithiumTray[row][col]);
+                    highCounter++;
                 }else{
-                    lowGrade.set(counter, i);
-                    counter++;
+                    lowGrade.add(lithiumTray[row][col]);
+                    lowCounter++;
                 }
             }
         }
@@ -44,7 +56,7 @@ public class LithiumGrading
      * Sorts the Both LinkedLists in Ascending Order
      */
     public void sortLithium(){
-        
+
         int j;
         boolean low = true;   // low set to true to begin first pass
         boolean high = true; //high set to true to begin first pass
@@ -53,7 +65,7 @@ public class LithiumGrading
         //What happens if size = Null/ 0??
         int lowLength = lowGrade.size();
         int highLength = highGrade.size();
-        
+
         //Low Graded
         while (low)
         {
@@ -85,11 +97,8 @@ public class LithiumGrading
                 }
             }
         }
-        
-        //Printing
-        
-        
-        
-    }
 
+        //Printing
+
+    }
 }
