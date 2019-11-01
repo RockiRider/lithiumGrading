@@ -2,12 +2,12 @@ import java.util.Random;
 /**
  * Write a description of class GenerateLithium here.
  *
- * @author (your name)
+ * @author Tsotne Gvadzabia
  * @version (a version number or a date)
  */
 public class GenerateLithium
 {//you may alter this code accordingly as there may be some anomalies 
-    private int tray [][] = new int [5][3];
+    public int tray [][] = new int [5][3];
     private int grading = 0;
     private Random randomGenerator;
     /**
@@ -17,7 +17,10 @@ public class GenerateLithium
     {
         randomGenerator = new Random();
     }
-
+    
+    /**
+     * Method that fills in tray array with generated lithium grades
+     */
     public void generateSample()
     {
         for (int i = 0; i < 5; i++)
@@ -30,7 +33,10 @@ public class GenerateLithium
             }
         }
     }
-
+    
+    /**
+     * Method that Prints out Tray Array
+     */
     public void printTray(){
         for (int[] a : tray) {
             for (int i : a) {
@@ -42,6 +48,9 @@ public class GenerateLithium
     }
 
     public int getGrading(){
+        if(grading == 0){
+            grading++;
+        }
         return grading;
     }
 

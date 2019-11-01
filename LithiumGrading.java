@@ -20,20 +20,6 @@ public class LithiumGrading
     }
 
     /**
-     * Test Method to print out Lithium Tray, to see if we can use it here
-     */
-    public void printOut(){
-        for (int[] a : lithiumTray) {
-            for (int i : a) {
-                System.out.print(i + " || ");
-
-            }
-            System.out.println("\n");
-        }
-
-    }
-
-    /**
      * Sorts tray into High and Low Grade Linked Lists
      */
     public void generateGrades(){
@@ -72,7 +58,7 @@ public class LithiumGrading
             low= false;    //set flag to false awaiting a possible swap
             for( j=0;  j < lowLength -1;  j++ )
             {
-                if ( lowGrade.get(j) < lowGrade.get(j+1))   // change to > for ascending sort
+                if ( lowGrade.get(j) > lowGrade.get(j+1))   // change to > for ascending sort
                 {
                     temp = lowGrade.get(j);                //swap elements
                     lowGrade.set(j,lowGrade.get(j+1));
@@ -88,7 +74,7 @@ public class LithiumGrading
             high= false;    //set flag to false awaiting a possible swap
             for( j=0;  j < highLength -1;  j++ )
             {
-                if ( highGrade.get(j) < highGrade.get(j+1))   // change to > for ascending sort
+                if ( highGrade.get(j) > highGrade.get(j+1))   // change to > for ascending sort
                 {
                     temp = highGrade.get(j);                //swap elements
                     highGrade.set(j,highGrade.get(j+1));
@@ -98,7 +84,15 @@ public class LithiumGrading
             }
         }
 
-        //Printing
-
+        //Printing For Testing Purposes
+        System.out.println("High Grade");
+        for(int num:highGrade) {
+            System.out.println(num);
+        }
+        System.out.println("");
+        System.out.println("Low Grade");
+        for(int num:lowGrade) {
+            System.out.println(num);
+        }
     }
 }

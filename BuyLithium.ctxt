@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BuyLithium
+comment0.text=\r\n\ Search\ and\ buy\ your\ lithium\ here\!\r\n\r\n\ @author\ Tsotne\ Gvadzabia\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=lithiumPricing
+comment1.target=BuyLithium(LithiumPricing)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BuyLithium\r\n
+comment2.params=input
+comment2.target=void\ findBestPrice(double)
+comment2.text=\r\n\ Search\ for\ Lithium\ via\ input\ price\ and\ output\ results\r\n\ \r\n
+comment3.params=input
+comment3.target=void\ findHighQuality(int)
+comment3.text=\r\n\ Search\ for\ Lithium\ Grade\ of\ input\ or\ below\ and\ output\ results\r\n
+numComments=4

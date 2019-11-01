@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=LithiumPricing
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LithiumPricing\ here.\r\n\r\n\ @author\ Tsotne\ Gaadzabia\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=generateLithium
+comment1.target=LithiumPricing(GenerateLithium)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LithiumPricing\r\n
+comment2.params=
+comment2.target=void\ printOut()
+comment2.text=\r\n\ Test\ Method\ to\ print\ out\ Lithium\ Tray,\ to\ see\ if\ we\ can\ use\ it\ here\r\n
+comment3.params=
+comment3.target=void\ setPrice()
+comment3.text=\r\n\ Matches\ Lithium\ Grades\ with\ their\ price\ in\ a\ the\ setPrice\ HashMap,\ using\ the\ data\ from\ the\ Pricing\ hashMap\r\n
+comment4.params=
+comment4.target=void\ printPrice()
+comment5.params=
+comment5.target=java.util.HashMap\ getSetPrice()
+comment6.params=
+comment6.target=java.util.HashMap\ getPricing()
+numComments=7
