@@ -1,12 +1,8 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+### Java Assignment for Algorithms, Correctness and Efficiency
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+Read the Word Document for the Assignment details.
+
+
+Author: Tsotne Gvadzabia
+Establishment: University of Kent
+
