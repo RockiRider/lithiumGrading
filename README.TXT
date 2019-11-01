@@ -1,4 +1,4 @@
-### Java Assignment for Algorithms, Correctness and Efficiency
+##Java Assignment for Algorithms, Correctness and Efficiency
 
 Read the Word Document for the Assignment details.
 
